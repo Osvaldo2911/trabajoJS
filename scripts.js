@@ -51,33 +51,6 @@ function conv() {
 
 }
 
-function trnasformarCadena() {
-
-    var cajaCadena = document.getElementById("caja_entrada");
-    var cajavocales = document.getElementById("caja_voc");
-    var cajacons = document.getElementById("caja_cons");
-    var cajarep = document.getElementById("caja_rep");
-    var cajaalt = document.getElementById("caja_alt");
-    var cadena = cajaCadena.value;
-    var numVocales;
-    var long = cadena.length;
-    long = long - cadena.replace(/[^aeiouAEIOU]/g, '').length;
-    cajacons.value = long;
-    cajavocales.value =  cadena.replace(/[^aeiouAEIOU]/g, '').length;
-
-    var resultado = '';
-
-    for(let i = 0; i < cadena.length; ++i) {
-        if (i % 2 == 0) {
-            resultado += cadena[i].toUpperCase();
-        } else {
-            resultado += cadena[i].toLowerCase();
-        }
-    }
-
-
-    cajaalt.value = resultado;
-    
-
+function cadena() {
 
 }
