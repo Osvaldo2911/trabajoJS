@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js"></script>
+    <title>Funciones</title>
+</head>
+
+<body>
+        <h2>GENERADOR CURP </h2>
+        <form action="" method="POST" onsubmit="return curp()">
+            <label>Nombre:</label>
+            <input type="text" id="nombre" name="caja_num_control" maxlength="10"  value="osvaldo" size="10" required />
+            <br>
+            <label>Apellido Paterno:</label>
+            <input type="text" id="apellido1" name="caja_num_control" maxlength="10" value="de la torre" size="10" required />
+            <br>
+            <label>Apellido Materno:</label>
+            <input type="text" id="apellido2" name="caja_num_control" maxlength="10" value="ortiz" size="10" required />
+            <br>
+            <label>Fecha de nacimiento:</label>
+            <br>
+            <label>Dia:</label>
+            <input type="text" id="dia" name="caja_num_control" maxlength="2" value="29" size="10" required />
+            <br>
+            <label>Mes:</label>
+            <input type="text" id="mes" name="caja_num_control" maxlength="2" value="11" size="10"  required />
+            <br>
+            <label>Año:</label>
+            <input type="text" id="año" name="caja_num_control" maxlength="4" value="1999" size="10" required />
+            <br>
+            <label>Sexo:</label>
+            <input type="text" id="sexo" name="caja_num_control" maxlength="1" value="M" size="10" required />
+            <br>
+            <label>Estado:</label>
+            <input type="text" id="estado" name="caja_num_control" maxlength="15" value="Zacatecas" size="10" required />
+            <br>
+            <label id="res"> CURP: </label>
+            <br>
+            <input type="button" onclick="curp()" value="Generar"/>
+        </form>
+        
+    
+        <h3>CONVERTIDOR</h3>
+        <form action="" method="POST" onsubmit="return conv()">
+            <label>Numero a convertir:</label>
+            <input type="text" id="numero" value ="5"name="caja_num_control" maxlength="10" size="10" required />
+            <br><br>
+            <label>Converciones: </label>
+            <br>
+            <label>Binario:</label>
+            <input type="text" id="bin" name="caja_num_control" maxlength="10" size="10" required />
+            <br>
+            <label>Hexadecimal:</label>
+            <input type="text" id="hex" name="caja_num_control" maxlength="10" size="10" required />
+            <br>
+            <label>Octal:</label>
+            <input type="text" id="oct" name="caja_num_control" maxlength="10" size="10" required />
+            <br>
+            <input type="button" onclick="conv()" value="Convertir"/>
+        </form>
+
+    <fieldset>
+        <legend>MANIPULADOR CADENAS </legend>
+        <form action="" method="POST">
+            <label>Ingrese una cadena:</label>
+            <input type="text" id="caja_entrada" value="abcdefghi" name="caja_num_control" maxlength="10" size="10" required />
+            <br><br>
+            <label>Cantidad vocales:</label>
+            <input type="text" id="caja_voc" name="caja_num_control" maxlength="10" size="10" required />
+            <br><br>
+            <label>Cantidad consonantes:</label>
+            <input type="text" id="caja_cons" name="caja_num_control" maxlength="10" size="10" required />
+            <br><br>
+            <label>Cantidad repetición:</label>
+            <input type="text" id="caja_rep" name="caja_num_control" maxlength="10" size="10" required />
+            <br><br>
+            <label>Cadena alterada:</label>
+            <input type="text" id="caja_alt" name="caja_num_control" maxlength="10" size="10" required />
+            <br><br>
+            
+
+
+        
+            <br><br>
+            <input type="button" onclick="trnasformarCadena()" value="Obtener"/>
+
+            
+        </form>
+
+    </fieldset>
+<!-- a) Cantidad de vocales
+
+        b) Cantidad de Consonantes
+
+        c) Cantidad de aparación de una letra ingresada por el usuario
+
+        d) La cadena como cadena camel case especial, ejemplo: InGeNiErIa-->
+</body>
+
+</html>
